@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.mlkit.samples.nl.translate"
+    android:versionCode="1"
+    android:versionName="v1">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="LearnLang"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".java.MainSPANISH"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainARABIC"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainFRENCH"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainRUSSIAN"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainPORTUGUESE"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainMANDARIN"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainGERMAN"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainCourse"
+            android:exported="false" />
+        <activity
+            android:name=".java.page"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainLog"
+            android:exported="false" />
+        <activity
+            android:name=".java.MainReg"
+            android:exported="false" />
+        <activity
+            android:name=".java.splash"
+            android:exported="true"
+            android:label="LearnLang">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".java.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

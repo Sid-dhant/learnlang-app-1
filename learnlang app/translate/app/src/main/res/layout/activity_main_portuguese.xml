@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".java.MainPORTUGUESE">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        app:title="Navigation Bar"
+        android:background="#2196f3"
+        app:titleTextColor="#fff"/>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/drawer_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="623dp"
+                android:gravity="center"
+                android:text="Why Portuguese ?"
+                android:textColor="#F80909"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="331dp"
+                android:layout_height="440dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="167dp"
+                android:gravity="center"
+                android:text="It is the sixth most spoken language in the world, with approximately 223 million speakers worldwide. Secondly, Portuguese is an important language for business, especially for those interested in working in industries such as tourism, trade, and agriculture. Thirdly, Portuguese culture has a rich history, including literature, art, music, and cinema, which can provide personal enrichment. Fourthly, Portuguese is the official language of several countries, including Brazil, which has the world's seventh-largest economy. Lastly, learning Portuguese can open up opportunities for travel, as it is widely spoken in many parts of the world, including Brazil, Portugal, Angola, and Mozambique."
+                android:textColor="#040303"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="43dp"
+                android:gravity="center"
+                android:text="Check Navigation Bar for Courses"
+                android:textColor="#2155F3"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/item_file"
+            app:itemTextColor="@drawable/nav_bg"
+            app:itemIconTint="@drawable/nav_bg"
+            app:itemTextAppearance="@style/TextViewStyle"
+            app:itemHorizontalPadding="10dp"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".java.MainFRENCH">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        app:title="Navigation Bar"
+        android:background="#2196f3"
+        app:titleTextColor="#fff"/>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/drawer_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="99dp"
+                android:layout_marginBottom="623dp"
+                android:gravity="center"
+                android:text="Why French ?"
+                android:textColor="#F80909"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="387dp"
+                android:layout_height="456dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="163dp"
+                android:gravity="center"
+                android:text="it is one of the most widely spoken languages in the world, with approximately 300 million speakers worldwide. Secondly, French is an important language for business, especially for those interested in working in industries such as fashion, luxury goods, and tourism, as France has a strong presence in these fields. Thirdly, French culture has a rich history, including literature, art, music, and cinema, which can provide personal and cultural enrichment. Fourthly, French is an official language in many international organizations, such as the United Nations, the International Olympic Committee, and the European Union, which makes it an important language for diplomacy and international relations. Lastly, learning French can improve cognitive function and help prevent cognitive decline in older adults.     "
+                android:textColor="#040303"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="43dp"
+                android:gravity="center"
+                android:text="Check Navigation Bar for Courses"
+                android:textColor="#2155F3"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/item_file"
+            app:itemTextColor="@drawable/nav_bg"
+            app:itemIconTint="@drawable/nav_bg"
+            app:itemTextAppearance="@style/TextViewStyle"
+            app:itemHorizontalPadding="10dp"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>

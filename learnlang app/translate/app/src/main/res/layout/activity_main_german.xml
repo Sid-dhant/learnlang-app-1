@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".java.MainGERMAN">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        app:title="Navigation Bar"
+        android:background="#2196f3"
+        app:titleTextColor="#fff"/>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/drawer_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="91dp"
+                android:layout_marginBottom="619dp"
+                android:gravity="center"
+                android:text="Why German ?"
+                android:textColor="#F80909"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="395dp"
+                android:layout_height="431dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="184dp"
+                android:gravity="center"
+                android:text="it is the most widely spoken language in the European Union, with approximately 100 million speakers worldwide. Secondly, German is an important language for business, especially for those interested in working in industries such as engineering, science, and technology, as Germany is a major player in these fields. Thirdly, German culture has a rich history, including literature, music, art, and philosophy, which can provide personal and cultural enrichment. Fourthly, Germany is a popular tourist destination, and knowing German can make traveling in Germany and other German-speaking countries more enjoyable. Lastly, learning German can improve cognitive function and help prevent cognitive decline in older adults."
+                android:textColor="#040303"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="56dp"
+                android:gravity="center"
+                android:text="Check Navigation Bar for Courses"
+                android:textColor="#2155F3"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/item_file"
+            app:itemTextColor="@drawable/nav_bg"
+            app:itemIconTint="@drawable/nav_bg"
+            app:itemTextAppearance="@style/TextViewStyle"
+            app:itemHorizontalPadding="10dp"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>
